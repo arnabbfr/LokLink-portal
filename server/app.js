@@ -26,7 +26,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://amazing-app-123.netlify.app'], 
+    origin: process.env.ALLOWED_ORIGIN 
+        ? process.env.ALLOWED_ORIGIN.split(',') 
+        : ['http://localhost:5173', 'http://localhost:3000'],
     credentials: true
 }));
 app.use(express.json({ limit: '5mb' }));
@@ -213,5 +215,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
