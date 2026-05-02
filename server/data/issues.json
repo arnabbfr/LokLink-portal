@@ -9,16 +9,22 @@
       "lat": 26.12278324288964,
       "lng": 91.70097510026888
     },
-    "status": "pending",
+    "status": "in-progress",
     "priority": "medium",
     "reportedBy": "Citizen User",
     "reportedAt": "2025-09-24T05:51:31.374Z",
-    "assignedTo": null,
-    "assignedAt": null,
-    "department": null,
+    "assignedTo": "Public Works Department",
+    "assignedAt": "2025-09-24T08:12:23.265Z",
+    "department": "public-works",
     "media": [],
     "voiceNote": "voice_note.mp3",
-    "updates": []
+    "updates": [
+      {
+        "date": "2025-09-24T08:12:23.265Z",
+        "note": "Assignment note: tyu",
+        "by": "Authority"
+      }
+    ]
   },
   {
     "id": "ISS-I2XUTL",
@@ -73,5 +79,26 @@
         "by": "Authority"
       }
     ]
+  },
+  {
+    "id": "ISS-J0NVIX",
+    "type": "water-supply",
+    "title": "Water Supply Problem",
+    "description": "dfghj",
+    "location": "",
+    "coordinates": {
+      "lat": 26.12008165377937,
+      "lng": 91.60449228809377
+    },
+    "status": "pending",
+    "priority": "medium",
+    "reportedBy": "Citizen User",
+    "reportedAt": "2025-09-24T08:10:44.672Z",
+    "assignedTo": null,
+    "assignedAt": null,
+    "department": null,
+    "media": [],
+    "voiceNote": "voice_note.mp3",
+    "updates": []
   }
 ]
