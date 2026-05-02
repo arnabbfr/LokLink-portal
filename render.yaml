@@ -5,8 +5,11 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: npm start
+    healthCheckPath: /api/issues
     envVars:
       - key: MONGO_URI
         sync: false
       - key: ALLOWED_ORIGIN
         sync: false
+      - key: NODE_VERSION
+        value: 20.x
